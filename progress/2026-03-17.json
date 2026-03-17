@@ -3,7 +3,7 @@
   "energy": "😊 Normal",
   "routine": {
     "total": 13,
-    "completed": 13,
+    "completed": 6,
     "items": [
       {
         "name": "Preparar a sacar a Anakin",
@@ -22,78 +22,30 @@
         "time": "8:00 AM"
       },
       {
-        "name": "Estudiar idiomas",
-        "time": "8:30 AM"
-      },
-      {
         "name": "Deep work Rappi",
         "time": "9:00 AM"
       },
       {
-        "name": "Paseo corto Anakin",
-        "time": "1:00 PM"
-      },
-      {
-        "name": "Repaso idiomas + Almuerzo",
-        "time": "1:30 PM"
-      },
-      {
         "name": "Deep work Rappi",
         "time": "2:00 PM"
-      },
-      {
-        "name": "Break / estiramiento",
-        "time": "6:00 PM"
-      },
-      {
-        "name": "Caminata con Anakin",
-        "time": "7:00 PM"
-      },
-      {
-        "name": "Cena + Proyectos personales",
-        "time": "8:10 PM"
-      },
-      {
-        "name": "Tiempo de diseño",
-        "time": "9:00 PM"
       }
     ]
   },
   "habits": {
     "total": 6,
-    "completed": 6,
+    "completed": 2,
     "items": [
-      {
-        "name": "Estudiar idiomas",
-        "emoji": "🗣️",
-        "streak": 1
-      },
       {
         "name": "Entrenamiento Anakin",
         "emoji": "🐕",
         "streak": 1
       },
       {
-        "name": "Deep work Rappi",
-        "emoji": "💻",
-        "streak": 1
-      },
-      {
-        "name": "Caminata con Anakin",
-        "emoji": "🦮",
-        "streak": 1
-      },
-      {
         "name": "Lectura",
         "emoji": "📖",
-        "streak": 1
-      },
-      {
-        "name": "Tiempo de diseño",
-        "emoji": "🎨",
         "streak": 1
       }
     ]
   },
-  "completion_pct": 100
+  "completion_pct": 42
 }
