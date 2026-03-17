@@ -350,8 +350,13 @@ body{
         </button>
       </div>
       <div class="hero-content">
-        <div class="quote-bubble">
-          <div class="quote-text" id="quoteText" style="opacity:.45">Cargando frase del día...</div>
+        <div class="quote-bubble" id="quoteBubble">
+          <div class="quote-dots" id="quoteDots">
+            <div class="quote-dot"></div>
+            <div class="quote-dot"></div>
+            <div class="quote-dot"></div>
+          </div>
+          <div class="quote-text" id="quoteText"></div>
         </div>
         <h1 class="app-title"><span class="app-title-text">Habits ninja </span><span class="app-title-emoji">🥷</span></h1>
         <p class="app-sub">Operation Ninja · Focus, Flow &amp; Fierceness</p>
@@ -407,7 +412,7 @@ body{
 <button id="saveBtn" onclick="openSaveFlow()"><span id="saveBtnIcon">💾</span> Guardar</button>
 
 <div class="energy-bar" id="energyBar">
-  <div class="energy-label">¿Cómo arrancas?</div>
+  <div class="energy-label">¿Qué tal tu energía de hoy?</div>
   <div class="energy-btns">
     <div class="energy-btn" id="elow"  onclick="setEnergy('low')">😴 Bajo</div>
     <div class="energy-btn" id="emid"  onclick="setEnergy('mid')">😊 Normal</div>
@@ -588,7 +593,15 @@ async function loadQuote(){
   const key='quote_'+todayStr;const cached=ls.get(key);if(cached){setQuote(cached);return;}
   try{const res=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:80,messages:[{role:'user',content:'Genera UNA frase motivacional corta (máximo 12 palabras) en español sobre enfoque, disciplina o hábitos. Estilo ninja/guerrero. Solo la frase, sin comillas ni explicación.'}]})});const data=await res.json();const q=data.content?.[0]?.text?.trim()||'La disciplina es el puente entre metas y logros.';ls.set(key,q);setQuote(q);}catch(e){setQuote('La disciplina es el puente entre metas y logros.');}
 }
-function setQuote(q){const el=document.getElementById('quoteText');el.textContent='"'+q+'"';el.style.opacity='.75';}
+function setQuote(q){
+  const dots=document.getElementById('quoteDots');
+  const text=document.getElementById('quoteText');
+  setTimeout(()=>{
+    dots.style.display='none';
+    text.textContent='"'+q+'"';
+    text.classList.add('visible');
+  },1600);
+}
 
 // Energy
 function loadEnergy(){if(ls.get('energy_dismissed_'+todayStr)){document.getElementById('energyBar').classList.add('hidden');return;}const e=ls.get('energy_'+todayStr);if(e)applyEnergy(e);}
