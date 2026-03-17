@@ -3,7 +3,7 @@
   "energy": "⚡ Alto",
   "routine": {
     "total": 13,
-    "completed": 6,
+    "completed": 9,
     "items": [
       {
         "name": "Preparar a sacar a Anakin",
@@ -22,8 +22,20 @@
         "time": "8:00 AM"
       },
       {
+        "name": "Estudiar idiomas",
+        "time": "8:30 AM"
+      },
+      {
         "name": "Deep work Rappi",
         "time": "9:00 AM"
+      },
+      {
+        "name": "Paseo corto Anakin",
+        "time": "1:00 PM"
+      },
+      {
+        "name": "Repaso idiomas + Almuerzo",
+        "time": "1:30 PM"
       },
       {
         "name": "Deep work Rappi",
@@ -33,8 +45,13 @@
   },
   "habits": {
     "total": 6,
-    "completed": 2,
+    "completed": 3,
     "items": [
+      {
+        "name": "Estudiar idiomas",
+        "emoji": "🗣️",
+        "streak": 1
+      },
       {
         "name": "Entrenamiento Anakin",
         "emoji": "🐕",
@@ -47,5 +64,5 @@
       }
     ]
   },
-  "completion_pct": 42
+  "completion_pct": 63
 }
