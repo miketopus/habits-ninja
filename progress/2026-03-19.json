@@ -1,0 +1,59 @@
+{
+  "date": "2026-03-19",
+  "energy": "—",
+  "routine": {
+    "total": 13,
+    "completed": 8,
+    "items": [
+      {
+        "name": "Preparar a sacar a Anakin",
+        "time": "6:00 AM"
+      },
+      {
+        "name": "Entrenamiento Anakin",
+        "time": "7:00 AM"
+      },
+      {
+        "name": "Desayuno personal y de Anakin",
+        "time": "8:00 AM"
+      },
+      {
+        "name": "Lectura",
+        "time": "8:00 AM"
+      },
+      {
+        "name": "Deep work Rappi",
+        "time": "9:00 AM"
+      },
+      {
+        "name": "Paseo corto Anakin",
+        "time": "1:00 PM"
+      },
+      {
+        "name": "Repaso idiomas + Almuerzo",
+        "time": "1:30 PM"
+      },
+      {
+        "name": "Deep work Rappi",
+        "time": "2:00 PM"
+      }
+    ]
+  },
+  "habits": {
+    "total": 6,
+    "completed": 2,
+    "items": [
+      {
+        "name": "Entrenamiento Anakin",
+        "emoji": "🐕",
+        "streak": 3
+      },
+      {
+        "name": "Lectura",
+        "emoji": "📖",
+        "streak": 1
+      }
+    ]
+  },
+  "completion_pct": 53
+}
